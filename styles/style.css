@@ -9,6 +9,7 @@
 .header {
   display: flex;
   flex-direction: column;
+  position: relative;
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
@@ -33,6 +34,7 @@
   list-style: none;
   padding-left: 0;
   margin-top: 8px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
   column-gap: 20px;
@@ -66,13 +68,12 @@
 .header__image {
   max-width: 636px;
   z-index: 1;
-  position: relative;
+  position: absolute;
   top: 135px;
   right: 20px;
 }
 
 .header__footer {
-  margin-bottom: 40px;
   margin-top: auto;
   justify-content: space-between;
   width: 100%;
@@ -202,8 +203,8 @@
 }
 
 .event-info__icon {
-  width: auto;
-  height: auto;
+  width: 24px;
+  height: 24px;
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
